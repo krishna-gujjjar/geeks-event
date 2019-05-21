@@ -24,6 +24,9 @@ defined('geeksEvent_plugin_style') or define('geeksEvent_Plugin_Style', geeksEve
 /** Plugin's Scripts URL Path */
 defined('geeksEvent_plugin_script') or define('geeksEvent_Plugin_script', geeksEvent_plugin_url . 'assets/js/');
 
+/** Plugin's Image URL Path */
+defined('geeksEvent_plugin_img') or define('geeksEvent_Plugin_img', geeksEvent_plugin_url . 'assets/img/');
+
 /** Include Assets */
 if (!function_exists('geeksEvent_Plugin_Assets')) {
     /** Include Plugin's Assets */
@@ -68,8 +71,7 @@ if (!function_exists('geeksEvent_Plugin_Menu')) {
             'manage_options',
             'geeksEvent',
             'geeksEvent_Page_Main',
-            // 'dashicons-buddicons-forums',
-            geeksEvent_plugin_url . 'assets/img/beautiful_flower.svg',
+            geeksEvent_Plugin_img . 'beautiful_flower.svg',
             2
         );
         /** Add SubMenu For Suppliers */
