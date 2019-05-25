@@ -21,6 +21,7 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_script('Bootstrap', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js', '', '4.3.1', true);
     wp_enqueue_style('Jquery Datatable', 'https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.19/css/dataTables.bootstrap4.min.css',);
     wp_enqueue_script('Jquery Datatables', 'https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.19/js/jquery.dataTables.min.js', '', '', true);
+    wp_enqueue_script('Bootstrap Datatables', 'https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.19/js/dataTables.bootstrap4.min.js', '', '', true);
     wp_enqueue_style('Geeks EventStyle', geeksEvent_Plugin_Style . 'main.min.css');
     wp_enqueue_script('Geeks EventScript', geeksEvent_Plugin_script . 'main.js');
 });
