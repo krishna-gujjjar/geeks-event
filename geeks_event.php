@@ -27,22 +27,4 @@ defined('geeksEvent_plugin_script') or define('geeksEvent_Plugin_script', geeksE
 /** Plugin's Image URL Path */
 defined('geeksEvent_plugin_img') or define('geeksEvent_Plugin_img', geeksEvent_plugin_url . 'assets/img/');
 
-<<<<<<< HEAD
-/** Include Assets */
-if (!function_exists('geeksEvent_Plugin_Assets')) {
-    /** Include Plugin's Assets */
-    function geeksEvent_Plugin_Assets()
-    {
-        wp_deregister_script('jquery');
-        wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', [], null, false);
-        wp_enqueue_style('Geeks EventStyle', geeksEvent_Plugin_Style . 'main.css');
-        wp_enqueue_script('Geeks EventScript', geeksEvent_Plugin_script . 'main.min.js', ['jquery'], null, true);
-    }
-    add_action('wp_enqueue_scripts', 'geeksEvent_Plugin_Assets');
-}
-
-/** Import Menu & Page */
-require_once geeksEvent_plugin_path . '/inc/config.php';
-=======
 require_once geeksEvent_plugin_path . 'inc/config.php';
->>>>>>> 5e52fec19d171bff3fa7a0a459ed97daa4930055
