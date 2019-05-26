@@ -27,6 +27,7 @@ defined('geeksEvent_plugin_script') or define('geeksEvent_Plugin_script', geeksE
 /** Plugin's Image URL Path */
 defined('geeksEvent_plugin_img') or define('geeksEvent_Plugin_img', geeksEvent_plugin_url . 'assets/img/');
 
+<<<<<<< HEAD
 /** Include Assets */
 if (!function_exists('geeksEvent_Plugin_Assets')) {
     /** Include Plugin's Assets */
@@ -42,3 +43,6 @@ if (!function_exists('geeksEvent_Plugin_Assets')) {
 
 /** Import Menu & Page */
 require_once geeksEvent_plugin_path . '/inc/config.php';
+=======
+require_once geeksEvent_plugin_path . 'inc/config.php';
+>>>>>>> 5e52fec19d171bff3fa7a0a459ed97daa4930055
